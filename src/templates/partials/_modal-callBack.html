@@ -1,0 +1,21 @@
+<div class="call_back all_modal fixmod mfp-hide">
+	<div class="fixmod__title">
+		<h5>У Вас есть вопросы?<br> <span>Мы поможем</span></h5>
+		<p>Наш лучший менеджер<br> позвонит Вам</p>
+	</div>
+	<form class="fixmod__form js_form">
+			<input type="hidden" name="project_name" value="CREDIT_PLUS">
+			<input type="hidden" name="admin_email" value="contacts@credit-plus.co.il">
+			<input type="hidden" name="form_subject" value="ЗАЯВКА НА ПЕРЕЗВОНИТЬ с кнопки-телефон">
+		<label>
+			<input name="Имя" type="text" required placeholder="Ваше имя">
+		</label>
+		<label>
+			<input class="js_phone" name="Телефон" type="tel" required placeholder="Ваш телефон">
+		</label>
+		<button onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka6', 'event_action': 'Najatie6', });">Жду звонка</button>
+	</form>
+	<div class="mod_closer js_closer">
+		{{mixins.icon('closer')}}
+	</div>
+</div>

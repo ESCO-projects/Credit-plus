@@ -1,0 +1,108 @@
+.service
+	position: relative
+	margin-bottom: 50px
+	background-color: $servicesBG
+	&__title
+		padding: 20px 0
+		left: 0
+		z-index: 20
+		font-size: 44px
+		color: $mainColor
+		font-family: $MainFontBold
+		text-align: center
+		color: #fff
+		text-transform: uppercase
+	&__services
+		display: flex
+		+r(1140)
+			flex-direction: column
+	&__item
+		padding: 30px 10px 20px
+		box-shadow: 0 15px 35px -7px rgba(0,0,0,0.5)
+		transition: all 0.7s ease
+		background-color: $servicesBG
+		transform: translateY(70px)
+		opacity: 0
+		width: 100%
+		+r(1140)
+			transition: all 0.2s ease
+			border-bottom: 1px solid silver
+			&:hover
+				transform: translateY(0)!important
+				box-shadow: 0 15px 35px -7px rgba(0,0,0,0.5)
+				position: relative
+				z-index: 2
+		&:hover
+			transform: translateY(-10px)!important
+			box-shadow: 0 5px 45px -4px rgba(0,0,0,0.7)
+			position: relative
+			z-index: 2
+		span
+			font-family: $MainFontBold
+		&__title
+			padding: 15px
+			text-align: center
+			color: #657d95
+			font-size: 24px
+			font-family: $MainFontLight
+			font-weight: normal
+		&__subtitle
+			border-radius: 6px
+			color: #fff
+			font-size: 22px
+			text-align: center
+			padding: 10px 15px
+			font-family: $MainFontLight
+			background-color: $mainColor
+			box-shadow: 0 10px 50px -5px rgba(44, 125, 206, 0.5)
+			+r(360)
+				font-size: 20px
+		&__limit
+			font-size: 26px
+			text-align: center
+			font-family: $MainFontBold
+			padding: 15px
+			color: #fff
+			border-bottom: 1px dashed #3c4c6a
+		&__list
+			padding: 10px
+			display: block
+			li
+				font-size: 16px
+				color: #fff
+				margin-bottom: 10px
+				padding-left: 20px
+				position: relative
+				text-align: left
+				&::before
+					position: absolute
+					content: ''
+					width: 14px
+					height: 14px
+					left: 0
+					top: 4px
+					background-repeat: no-repeat
+					background-size: contain
+					background-image: url("../img/checked.svg")
+		&__button
+			display: block
+			margin: 20px auto
+			width: 250px
+			min-height: 40px
+			border-radius: 6px
+			text-align: center
+			background-color: $buttonColor
+			font-family: $MainFontMedium
+			letter-spacing: 1px
+			color: #fff
+			font-size: 20px
+			padding: 10px
+			text-transform: uppercase
+			transition: all 0.3s ease
+			span
+				border-bottom: 1px solid transparent
+				transition: all 0.3s ease
+			&:hover
+				transform: scale(1.1)
+				span
+					border-color: #fff

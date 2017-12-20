@@ -1,0 +1,36 @@
+---
+title: Credit Plus
+headerBG: img/Cloud_Surf.jpg
+logo: img/logo.svg
+worker: img/worker.svg
+businessmen: img/businessmen.svg
+startup: img/startup.svg
+step1: img/check_list.svg
+step2: img/check-box.svg
+step3: img/libra.svg
+clients: img/clients.svg
+PATH_TO_MP4: img/Cloud_Surf.mp4
+PATH_TO_WEBM: img/Cloud_Surf.webm
+PATH_TO_OGV: img/Cloud_Surf.ogv
+PATH_TO_JPEG: img/Cloud_Surf.jpg
+car: img/car.jpg
+abouBG: img/about_bg.svg
+gif_video: img/video.svg
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+	{% include "partials/_header.html" %}
+	<div class="content_gradient">
+		{% include "partials/_services.html" %}
+		{% include "partials/_steps.html" %}
+		{% include "partials/_clients.html" %}
+		{% include "partials/_about.html" %}
+		{% include "partials/_footer.html" %}
+	</div>
+	{% include "partials/_fixed-btn-phone.html" %}
+	{% include "partials/_timeline-modal.html" %}
+	{% include "partials/_modal-callBack.html" %}
+
+{% endblock %}

@@ -1,0 +1,35 @@
+<div class="timemod all_modal mfp-hide">
+	<div class="timemod__title">
+		<h6>Мы помогли вам найти то, что Вы искали?</h6>
+</div>
+	<div class="timemod__content">
+		<div class="timemod__descr">
+			<p>
+				К сожалению, описать все на сайте нет возможности. Мы допускаем, что посетитель может остаться без всех ответов на свои вопросы...
+			</p>
+			<p>
+				В таком случае, мы просим Вас, оставьте 
+				свое мнение или не отвеченный вопрос тут 
+				Мы обязательно перезвоним Вам и дадим все нужные ответы!
+			</p>
+		</div>
+		<div class="timemod__form">
+			<form class="js_form">
+				<input type="hidden" name="project_name" value="CREDIT_PLUS">
+				<input type="hidden" name="admin_email" value="contacts@credit-plus.co.il">
+				<input type="hidden" name="form_subject" value="ТАЙМЛАЙН ФОРМА">
+
+				<label>
+					<input name="Имя" type="text" required placeholder="Ваше имя">
+				</label>
+				<label>
+					<input class="js_phone" name="Телефон" type="tel" required placeholder="Ваш телефон">
+				</label>
+				<label>
+					<textarea name="Комментарий" placeholder="Ваш комметарий"></textarea>
+				</label>
+				<button onclick="gtag('event', 'clickdopphone', { 'event_category': 'Knopka7', 'event_action': 'Najatie7', });">Отправить</button>
+			</form>
+		</div></div>
+	<div class="timemod__closer js_closer">{{mixins.icon('closer')}}</div>
+</div>

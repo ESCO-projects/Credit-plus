@@ -1,0 +1,100 @@
+@import helpers/all
+@import generated/sprite-svg
+@import layouts
+@import vars
+@import header
+@import services
+@import about
+@import clients
+@import steps
+@import footer
+@import fixed-phone
+@import timeline-modal
+@import modal-callBack
+@import node_modules/magnific-popup/dist/magnific-popup
+@import _form.sass
++font-face("Exo2-Light", "../fonts/Exo2-Light")
++font-face("Exo2-Medium", "../fonts/Exo2-Medium")
++font-face("Exo2-Regular", "../fonts/Exo2-Regular")
++font-face("Exo2-SemiBold", "../fonts/Exo2-SemiBold")
+
+.fade_in
+    opacity: 1!important
+    transform: translate(0) scale(1)!important
+
+.content_gradient
+    position: relative
+    height: auto
+    background-image: linear-gradient(to top, #1c92d2, #f2fcfe)
+
+body
+	font-family: $MainFontReg
+	font-weight: normal
+
+form,input,button,label
+	display: block
+	outline: none
+
+.main_wrapper
+    position: relative
+    max-width: 100%
+    overflow-x: hidden 
+    
+@keyframes shake
+	0%
+		transform: translateX(0)
+	15%
+		transform: translateX(4px)
+	30%
+		transform: translateX(-4px)
+	45%
+		transform: translateX(4px)
+	60%
+		transform: translateX(-4px)
+	75%
+		transform: translateX(4px)
+	90%
+		transform: translateX(-4px)
+	100%
+		transform: translateX(0)
+
+.my-mfp-slide-bottom
+  .all_modal
+    opacity: 0
+    -webkit-transition: all 0.2s ease-out
+    -moz-transition: all 0.2s ease-out
+    -o-transition: all 0.2s ease-out
+    transition: all 0.2s ease-out
+    -webkit-transform: translateY(-20px) perspective(600px) rotateX(10deg)
+    -moz-transform: translateY(-20px) perspective(600px) rotateX(10deg)
+    -ms-transform: translateY(-20px) perspective(600px) rotateX(10deg)
+    -o-transform: translateY(-20px) perspective(600px) rotateX(10deg)
+    transform: translateY(-20px) perspective(600px) rotateX(10deg)
+  &.mfp-ready .all_modal
+    opacity: 1
+    -webkit-transform: translateY(0) perspective(600px) rotateX(0)
+    -moz-transform: translateY(0) perspective(600px) rotateX(0)
+    -ms-transform: translateY(0) perspective(600px) rotateX(0)
+    -o-transform: translateY(0) perspective(600px) rotateX(0)
+    transform: translateY(0) perspective(600px) rotateX(0)
+  &.mfp-removing .all_modal
+    opacity: 0
+    -webkit-transform: translateY(-10px) perspective(600px) rotateX(10deg)
+    -moz-transform: translateY(-10px) perspective(600px) rotateX(10deg)
+    -ms-transform: translateY(-10px) perspective(600px) rotateX(10deg)
+    -o-transform: translateY(-10px) perspective(600px) rotateX(10deg)
+    transform: translateY(-10px) perspective(600px) rotateX(10deg)
+  &.mfp-bg
+    opacity: 0
+    -webkit-transition: opacity 0.3s ease-out
+    -moz-transition: opacity 0.3s ease-out
+    -o-transition: opacity 0.3s ease-out
+    transition: opacity 0.3s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: 0.8
+  &.mfp-removing.mfp-bg
+    opacity: 0
+
+
+
+

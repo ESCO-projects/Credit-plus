@@ -1,0 +1,83 @@
+.main_form
+	padding-bottom: 50px
+	min-height: 130px
+	background-color: $mainColor
+	background-image: linear-gradient(to bottom, $headTopColor 95%, $headBottomColor)
+	.head__nav
+		a
+			&:hover
+				color: #fff
+
+.form_footer
+	background-image: linear-gradient(to top, $headTopColor 95%, $headBottomColor)
+
+.fields
+	padding: 50px 0
+	text-align: center
+	+r(700)
+		padding: 50px 10px
+	h1
+		text-align: center
+		font-size: 44px
+		color: $mainColor
+		font-family: $MainFontBold
+		br
+			display: none
+		+r(800)
+			font-size: 36px
+		+r(670)
+			font-size: 40px
+			br
+				display: block
+	h3
+		text-align: left
+		clear: both
+		font-size: 26px
+		font-weight: normal
+		margin: 30px 0
+		padding-bottom: 7px
+		border-bottom: 1px solid silver
+		+r(800)
+			font-size: 20px
+	label
+		display: inline-block
+		width: 45%
+		margin: 15px 10px
+		+r(700)
+			display: block
+			width: 100%
+		+r(380)
+			margin: 15px 0
+		span
+			font-size: 18px
+			font-family: $MainFontBold
+	input,select,option
+		width: 100%
+		min-width: 290px
+		background-color: #d3d5d9
+		color: #000
+		padding: 5px 10px
+		border-radius: 5px
+		border: none
+		outline: none
+		display: block
+		font-size: 16px
+		font-family: $MainFontLight
+		vertical-align: top
+		&::placeholder
+			color: #000
+	button
+		display: block
+		min-width: 250px
+		height: 50px
+		margin: 30px auto
+		padding: 0 15px
+		border-radius: 25px
+		font-size: 20px
+		font-family: $MainFontBold
+		text-transform: uppercase
+		color: #fff
+		background-color: $buttonColor
+		transition: all 0.3s ease
+		&:hover
+			background-color: $mainColor

@@ -1,0 +1,39 @@
+.footer
+	padding: 50px 0
+	text-align: center
+	p,a
+		color: #fff
+		display: block
+		margin-bottom: 10px
+		transition: all 0.3s ease
+	&__copyrate
+		br
+			display: none
+		+r(485)
+			br
+				display: block
+		p,a
+			opacity: 0.5
+			&:hover
+				opacity: 1
+	&__phone
+		font-size: 30px
+		font-family: $MainFontBold
+		span
+			border-bottom: 1px solid transparent
+			transition: all 0.3s ease
+		&:hover
+			span
+				border-color: #fff
+			.icon
+				animation-name: shake
+				animation-duration: 0.5s
+				animation-iteration-count: 1
+				animation-timing-function: linear
+		.icon
+			fill: #fff
+			margin-bottom: -5px
+	&__privacy
+		transition: all 0.3s ease
+		&:hover
+			color: #fff

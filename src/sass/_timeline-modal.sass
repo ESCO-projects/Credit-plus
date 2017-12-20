@@ -1,0 +1,88 @@
+.timemod
+	width: 100%
+	text-align: center
+	color: #fff
+	position: relative
+	margin-top: 60px
+	&__closer
+		position: absolute
+		width: 50px
+		height: 50px
+		background-color: #FFF
+		top: -60px
+		margin-left: -25px
+		border-radius: 50%
+		left: 50%
+		padding-top: 15px
+		cursor: pointer
+		transition: all 0.5s ease
+		&:hover
+			transform: rotate(360deg)
+		.icon
+			font-size: 20px
+	&__title
+		padding: 15px
+		margin: 20px 0
+		background: $mainColor
+		background-image: linear-gradient(to right, #fff, $mainColor, #fff)
+		text-shadow: 0 1px 1px rgba(0,0,0,0.4)
+		h6
+			font-size: 34px
+			font-family: $MainFontBold
+		p
+			font-size: 22px
+	&__content
+		max-width: 650px
+		margin: 0 auto
+		text-align: center
+		> div
+			max-width: 50%
+			padding: 15px
+			display: inline-block
+			+r(580)
+				display: block
+				max-width: 100%
+	&__descr
+		p
+			text-indent: 20px
+			text-align: left
+			margin-bottom: 20px
+			letter-spacing: 0.05em
+			font-family: $MainFontLight
+	&__form
+		vertical-align: top
+		label,input,textarea
+			color: #fff
+		label
+			margin-bottom: 20px
+		textarea
+			height: auto
+			resize: vertical
+			min-height: 100px
+		input,textarea
+			width: 100%
+			border: 1px solid #fff
+			border-radius: 6px
+			padding: 5px 15px
+			font-size: 16px
+			background-color: transparent
+			transition: all 0.3s ease
+			font-family: $MainFontLight
+			&:focus,&:active
+				box-shadow: 0 3px 15px 0 rgba(255,255,255,0.4)
+				background-color: rgba(0,0,0,0.5)
+		button
+			color: #fff
+			font-family: $MainFontLight
+			text-transform: uppercase
+			font-size: 20px
+			max-width: 290px
+			width: 100%
+			margin: 0 auto
+			padding: 10px 15px
+			border-radius: 6px
+			background-color: $mainColor
+			box-shadow: 0 3px 15px 0 rgba(255,255,255,0.3)
+			transition: all 0.3s ease
+			&:hover
+				background-color: $buttonColor

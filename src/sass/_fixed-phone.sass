@@ -1,0 +1,45 @@
+.fixed_call_back
+	position: fixed
+	right: 35px
+	bottom: 20vh
+	background-color: $mainColor
+	display: block
+	width: 70px
+	height: 70px
+	border-radius: 50%
+	text-align: center
+	padding-top: 15px
+	animation: fixed_button 2.5s ease infinite
+	z-index: 100
+	+r(991)
+		width: 50px
+		height: 50px
+		padding-top: 10px
+		.icon
+			font-size: 30px
+	+r(480)
+		width: 30px
+		height: 30px
+		padding-top: 7px
+		.icon
+			font-size: 18px
+	&:hover
+		animation-play-state: paused
+	.icon
+		fill: #fff
+		font-size: 40px
+
+@keyframes fixed_button
+	0%
+	  transform: scale(1)
+	10%
+	  box-shadow: 0 0 0 5px rgba(44, 125, 206, 0.2)
+	20%
+	  box-shadow: 0 0 0 5px rgba(44, 125, 206, 0.2), 0 0 0 10px rgba(44, 125, 206, 0.2)
+	25%
+	  transform: scale(1.2)
+	45%
+	  box-shadow: 0 0 0 10px rgba(44, 125, 206, 0.2), 0 0 0 20px rgba(44, 125, 206, 0.2), 0 0 0 30px rgba(44, 125, 206, 0.2)
+	60%
+	  transform: scale(1)
+

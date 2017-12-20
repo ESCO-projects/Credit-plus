@@ -1,0 +1,63 @@
+.steps
+	&__title
+		font-size: 40px
+		color: $mainColor
+		text-align: center
+	&__steps
+		margin: 50px 0
+		text-align: center
+	&__item
+		vertical-align: top
+		margin-bottom: 30px
+		max-width: 320px
+		display: inline-block
+		margin: 50px
+		opacity: 0
+		transform: scale(0.5)
+		transition: all 0.5s ease
+		+r(1300)
+			max-width: 276px
+		+r(1140)
+			display: block
+			max-width: 320px
+			margin: 100px auto
+		&:hover
+			span
+				opacity: 1
+			img
+				transform: scale(1.2)
+	&__img
+		position: relative
+		transition: all 0.3s ease
+		&::before
+			position: absolute
+			content: ''
+			width: 160px
+			height: 160px
+			border-radius: 50%
+			background-color: $mainColor
+			opacity: 0.2
+			left: 50%
+			margin-left: -80px
+			top: -50px
+		img
+			transition: all 0.3s ease
+			display: block
+			margin: 0 auto 30px
+			max-width: 150px
+			position: relative
+			z-index: 2
+	&__descr
+		text-align: center
+		line-height: 0.5
+		span
+			opacity: 0.5
+			transition: all 0.3s ease
+			color: #fff
+			font-size: 80px
+			font-family: $MainFontMedium
+		p
+			margin-top: -5px
+			font-size: 18px
+			color: #fff
+			line-height: 1
